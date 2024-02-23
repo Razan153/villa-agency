@@ -74,6 +74,12 @@ a {
     font-size: 14px;
 }
 
+@media (max-width: 767px) {
+    .cont span {
+        font-size: 10px;
+    }
+}
+
 .icon i {
     padding: 7px;
     border-radius: 50%;
@@ -295,14 +301,20 @@ li.nav-item-end:hover a span {
     .colum-three {
         display: flex;
         flex-direction: row;
-        height: fit-content;
+
     }
 }
 
 @media (max-width: 767px) {
+    .colum-three {
+        display: flex;
+        flex-direction: column;
+    }
+
     .colum-three .row {
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
     .colum-three .row .text {
@@ -354,15 +366,26 @@ li.nav-item-end:hover a span {
 
 @media (max-width: 767px) {
     .section4 img {
-        width: 450px;
+        width: 100%;
         margin: auto;
     }
 
 }
 
 .section4 .play-vidio {
-    left: 46%;
-    top: 40%;
+     left: 46%;
+    top: 83%;
+
+    
+
+}
+@media (max-width: 767px) {
+    .section4 .play-vidio {
+        left: 38%;
+       top: 59%;
+   
+   }
+
 }
 
 /*end*/
@@ -378,6 +401,14 @@ li.nav-item-end:hover a span {
         flex-basis: 50%;
         width: fit-content;
         text-align: center;
+    }
+
+}
+@media (max-width: 767px) {
+    .section5 .row .number {
+        flex-basis: 75%;
+        text-align: center;
+        margin-bottom: 15px;
     }
 
 }
@@ -429,7 +460,15 @@ li.nav-item-end:hover a span {
     padding-bottom: var(--section-padding);
     background-color: #fafafa;
 }
-
+ @media(max-width: 767px){
+    .section6 .com .conct .colum{
+        flex-wrap: wrap;
+    } 
+    .section9 .colum2{
+        width: 331px;
+        margin: auto;
+    }
+ }
 .section6 .com .conct .colum span {
     background-color: black;
 }
@@ -451,7 +490,6 @@ li.nav-item-end:hover a span {
 }
 
 .colum2:hover {
-    background-color: ;
     transform: translateY(-8px);
 }
 
@@ -555,6 +593,13 @@ li.nav-item-end:hover a span {
     margin-top: -20%;
     z-index: 1;
 }
+@media (max-width: 767px) {
+    .section9 .row{
+        margin-top: -81%;
+        z-index: 1;
+    }
+
+}
 
 .section9 .row form input,
 textarea {
@@ -573,7 +618,16 @@ textarea {
 .section9 .row form button:hover {
     background-color: #f35525;
 }
+.section9 .contact i{
+    font-size: 50px;
+}
 
+@media (max-width: 767px) {
+    .section9 .contact i{
+        font-size: 40px;
+    }
+
+}
 /*end*/
 /*footer*/
 footer {
